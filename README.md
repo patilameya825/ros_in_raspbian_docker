@@ -1,12 +1,12 @@
 ## ROS in Docker for Raspberry Pi 4
 
 ```
-git clone ...
+git clone https://github.com/patilameya825/ros_in_raspbian_docker.git
 ```
 
 ** Build Dockerfile **
 ```
-cd <project-dir>/Docker
+cd ros_in_raspbian_docker/Docker
 docker build -t ros-kinetic-armv7-armhf-ubuntu:latest .
 ```
 
