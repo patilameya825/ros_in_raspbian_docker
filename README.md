@@ -21,7 +21,7 @@ docker run -it --name ros-1 ros-kinetic-armv7-armhf-ubuntu bash
 docker pull ameyapatil/ros_in_raspbian_docker
 ```
 
-**Run terminal in ROS container, built from the above image**
+**Run terminal in ROS container, which is pulled via above command**
 ```
 docker run -it --name ros-1 ameyapatil/ros_in_raspbian_docker bash
 ```
