@@ -1,5 +1,6 @@
 FROM armv7/armhf-ubuntu:xenial
 MAINTAINER Ameya Patil (patil.ameya825@gmail.com)
+RUN printf "deb http://archive.debian.org/debian/ jessie main\ndeb-src http://archive.debian.org/debian/ jessie main\ndeb http://security.debian.org jessie/updates main\ndeb-src http://security.debian.org jessie/updates main" > /etc/apt/sources.list
 RUN apk update
 RUN apk install -y lsb-release
 RUN sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
