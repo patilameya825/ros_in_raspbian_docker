@@ -4,13 +4,13 @@
 git clone https://github.com/patilameya825/ros_in_raspbian_docker.git
 ```
 
-** Build Dockerfile **
+**Build Dockerfile**
 ```
 cd ros_in_raspbian_docker/Docker
 docker build -t ros-kinetic-armv7-armhf-ubuntu:latest .
 ```
 
-** Run terminal in ROS container, built from the above image **
+**Run terminal in ROS container, built from the above image**
 ```
 docker run -it ros-kinetic-armv7-armhf-ubuntu bash
 ```
